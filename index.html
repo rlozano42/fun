@@ -34,31 +34,15 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
   </head>
-  <body>
-  	
-  	<!-- Start Header -->
-	<header id="mu-hero" class="" role="banner">
-		<div class="mu-hero-overlay">
-			<div class="container">
-				<div class="mu-hero-area">
-
-					<!-- Start hero featured area -->
-					<div class="mu-hero-featured-area">
-						<div class="mu-hero-featured-content">
-							<h1>BIENVENIDO A CRIPTOMILLONARIO</h1>
-						</div>
-					</div>
-					<!-- End hero featured area -->
-					
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- End Header -->
+  <body background="assets/images/1.jpg">
+	<!-- Script de mailchimp no se como ponerlo de momemto-->
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"caf4c358e8dfa7e5341b7ca31","lid":"1edc59e762","uniqueMethods":true}) })
+	</script>
+	<!-- Hay que implementarlo en el segundo botón -->
 	
-	<!-- Start main content -->
 	<main role="main">
 		<!-- Start About -->
 		<section id="mu-about">
@@ -66,20 +50,24 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="mu-about-area">
+							
 							<!-- Start Feature Content -->
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<img class="" src="assets/images/mokeup.jpg" alt="libro CRIPTOMILLONARIO">
+										<img class="" src="assets/images/ebook.png" alt="libro CRIPTOMILLONARIO">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="mu-about-right">
-										<h1>Libro Criptomillonario<br></h1>
-										<h3>Para conseguirlo tienes que seguir estos simples pasos: <br><br><br><br></h3>
-										<img src="assets/images/paso1.png"/>
-										<br> <br><br><br>
-										<img src="assets/images/paso2.png"/><br><br><br><br>
+										<h1>Libro Criptomillonario<br><br></h1>
+										<h3 style="color:red;">"El libro que me hubiese gustado tener cuando empecé"<br><br></h3>
+										<h1>Para conseguirlo tienes que seguir estos simples pasos: <br><br></h1><img src="assets/images/paso1.png"/>
+										<br>
+										<p align="center"><a href="https://www.instagram.com/ramonbitcoin/" ><img src="assets/images/accion1.png"  width="420" height="200"></a></p>
+										<br> <br>
+										<img src="assets/images/paso2.png"/><br>
+										<p align="center"><img src="assets/images/accion2.png"  width="420" height="200" onclick=""></p>
 									</div>
 								</div>
 							</div>
@@ -101,14 +89,12 @@
 						<div class="mu-contact-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-heading-title">Contacto</h2>
+								<h2 class="mu-heading-title" style="color:black;">Contacto</h2>
 								<p>Si quieres contactar con nosotros por algun motivo</p>
 								<p>Tiene el Instagram del autor para ello @Ramonbitcoin</p>
 								<a href="https://www.instagram.com/ramonbitcoin/"><img src="assets/images/insta.png" width="70" height="70" /> </a>
-								<br><br><br><br><br>
 							</div>
-							
-							
+						
 						</div>
 					</div>
 				</div>
@@ -116,11 +102,13 @@
 		</section>
 		<!-- End Contact -->
 		
-		<section id="mu-yo">
+		<section id="mu-contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="mu-yo-area">
+						<div class="mu-contact-area">
+
+							<div class="mu-title-area">
 							<p align="center">DESCARGOS DE RESPONSABILIDAD IMPORTANTES:<br>
 								Este sitio no es parte del sitio web de Facebook o Facebook, Inc.<br>
 								Además, este sitio no está respaldado por Facebook de ninguna manera.<br>
@@ -141,6 +129,7 @@
 								 ser realizada con la previa autorización de sus titulares. La infracción de los derechos mencionados puede ser constitutiva de delito<br>
 								  contra la propiedad intelectual (Art. 270 y siguientes del Código Penal). <br><br><br><br><br><br>
 							</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -148,6 +137,7 @@
 		</section>
 		
 	</main>
+	
 	
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
