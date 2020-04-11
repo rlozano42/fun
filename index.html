@@ -54,7 +54,9 @@
 										<p align="center"><a href="https://www.instagram.com/ramonbitcoin/" ><img src="assets/images/accion1.png"  width="420" height="200"></a></p>
 										<br> <br>
 										<img src="assets/images/paso2.png"/><br>
-										<p align="center"><a href = "libro.html"> <img src="assets/images/accion2.png"  width="420" height="200"></p></a>
+										<p align="center">
+											<button class="handle_modal_btn" onclick="handle_modal();"><img src="./assets/images/accion2.png" alt=""></button>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -141,5 +143,81 @@
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
+
+	<style>
+		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:500px;
+		border: 1px solid #e1e1e1;
+		padding: 10em 2em;
+		border-radius: 4px;
+		}
+		#mc_embed_signup form label{
+		  font-size: 28px;
+		  color: #2f2f2f;
+		}
+		#mc_embed_signup form .button{
+		  background: rgb(43, 165, 43);
+		}
+		.handle_modal_btn{
+		  border: none;
+		  background-color: transparent;
+		  padding: 0;
+		  margin: 0;
+		  display: inline-block;
+		  cursor: pointer;
+		}
+		.sus_modal{
+		  position: fixed;
+		  height: 100vh;
+		  width: 100%;
+		  background-color: rgba(255,255,255,.7);
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  top: -100vh;
+		  left: 0;
+		  transition: .4s ease;;
+		}
+		.sus_modal_active{
+		  top: 0;
+		  z-index: 999999;
+		}
+		.close_btn{
+		  display: block;
+		  width: auto;
+		  margin: auto;
+		  border: 1px solid #e1e1e1;
+		  padding: 1em 2em;
+		  transform: scale(.7);
+		  background: #2f2f2f;
+		  color: white;
+		  cursor: pointer;
+		}
+	  </style>
+	  <div id="modal" class="sus_modal">
+	  <!-- Begin Mailchimp Signup Form -->
+	  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	  <div id="mc_embed_signup">
+	  <form action="https://gmail.us19.list-manage.com/subscribe/post?u=caf4c358e8dfa7e5341b7ca31&amp;id=1edc59e762" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		  <div id="mc_embed_signup_scroll">
+		<label for="mce-EMAIL">Conseguir libro gratuito</label>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Tu dirección de email" required>
+		  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_caf4c358e8dfa7e5341b7ca31_1edc59e762" tabindex="-1" value=""></div>
+		  <div class="clear"><input type="submit" value="Subscribirse" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		  </div>
+	  </form>
+	  <button class="close_btn" onclick="handle_modal()">Cerrar</button>
+	  </div>
+	
+	  <!--End mc_embed_signup-->
+	  </div>
+	  <script>
+		function handle_modal() {
+		  let btn = document.querySelector('#modal');
+		  btn.classList.toggle('sus_modal_active');
+		}
+	  </script>
+	  <!-- aquí termina el código para el modal -->
+	  
   </body>
 </html>
